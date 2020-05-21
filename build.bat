@@ -10,5 +10,5 @@ set Libraries=%WindowsLib%
 mkdir ./bin/
 cd ./bin
 :: /MD is IMPORTANT, wont use GLFW without it.
-cl ../src/build.c /Fe%cd%/skycloud /MD %Libraries% /link
+cl ../src/build.c /Zi /Fe%cd%/skycloud /MD %Libraries% /link
 cd ..
